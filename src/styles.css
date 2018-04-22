@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: rgb(199, 238, 243);
+  padding: 30px;
+}
+.jumbotron{
+  background-color: rgb(80, 122, 122);
+  color: white;
+}
+.card{
+  background-color:rgb(156, 197, 197);
+  margin-top:10px;
+  color: rgb(15, 24, 63);
+}
+tr{
+  margin:10px;
+}

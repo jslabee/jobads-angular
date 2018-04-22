@@ -1,0 +1,26 @@
+
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3">Job Ads</h1>
+        <p class="lead">This is a simple job ads page</p>
+      </div>
+    <thead>
+        <tr>
+            <th [class.active]="order === 'payMax'"
+            (click)="setOrder('payMax')">
+          payMax <span [hidden]="reverse">▼</span>
+          <span [hidden]="!reverse">▲</span>
+        </th>
+        </tr>
+
+      </thead>
+  <ng-container *ngFor="let ads of data | orderBy: order:reverse:'case-insensitive'">
+      <div class="card ">
+      <div class="card-body">
+          <h5 class="card-title">{{ ads.title }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">id: {{ ads.id }}</h6>
+              <p class="card-text">dectription:  {{ ads.description }} </p>
+      </div>
+      </div>
+  </ng-container>
+</div>
